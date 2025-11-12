@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mariner’s Provision – Shop durable fishing knives and multi-tools for all nautical adventures.">
+    <meta name="keywords" content="fishing knives, nautical knives, multi-tools, maritime knives">
+    <title>Mariner’s Provision | Knives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Lora', serif; margin: 0; background: #fef5e7; color: #002f4b; }
+        header { background-color: #004d73; color: #fcd77f; padding: 1rem; text-align: center; }
+        nav a { margin: 0 15px; color: #fcd77f; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .products { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; padding: 2rem; }
+        .product-card { background: #fff4e1; border: 1px solid #ccc; border-radius: 8px; width: 250px; padding: 1rem; text-align: center; }
+        .product-card img { width: 100%; border-radius: 5px; }
+        .product-card button { background-color: #004d73; color: #fcd77f; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; }
+        .product-card button:hover { background-color: #00304d; }
+        footer { text-align: center; padding: 1rem; background-color: #004d73; color: #fcd77f; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Mariner’s Provision</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="gear.html">Gear</a>
+        <a href="knives.html">Knives</a>
+        <a href="boats.html">Boats</a>
+    </nav>
+</header>
+
+<section style="text-align:center; padding:2rem;">
+    <h2>Fishing Knives & Multi-Tools</h2>
+    <p>Durable knives and multi-tools designed for fishing, boating, and outdoor maritime adventures.</p>
+</section>
+
+<section class="products">
+    <div class="product-card">
+        <img src="placeholder-filletknife.jpg" alt="Fillet Knife">
+        <h3>Fillet Knife</h3>
+        <p>Sharp, corrosion-resistant knife ideal for filleting fish.</p>
+        <button onclick="window.open('AFFILIATE_LINK_FILLET','_blank')">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="placeholder-multitool.jpg" alt="Multi-Tool Knife">
+        <h3>Multi-Tool Knife</h3>
+        <p>Versatile multi-tool for sailing, fishing, and survival situations.</p>
+        <button onclick="window.open('AFFILIATE_LINK_MULTITOOL','_blank')">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="placeholder-safetyknife.jpg" alt="Safety Knife">
+        <h3>Safety Knife</h3>
+        <p>Reliable and safe cutting tool for deck and boat use.</p>
+        <button onclick="window.open('AFFILIATE_LINK_SAFETY','_blank')">Buy Now</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; <span id="year"></span> Mariner’s Provision</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
